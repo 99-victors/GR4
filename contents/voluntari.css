@@ -1,6 +1,5 @@
 html {
     background-color: turquoise;
-    
 }
 
 .title{
@@ -16,12 +15,28 @@ html {
 .pageContainer{
     box-shadow: 10px 10px 5px #888888;
     background-color: white;
-
     overflow: hidden;
+}
+
+#columns{
+    width: 100%;
+}
+
+.column{
+    width: 20%;
+}
+
+.middleColumn{
+    width: 60%;
+    align-self: center;
 }
 
 .contentPage{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#searchBox{
+    width: 75%;
 }
