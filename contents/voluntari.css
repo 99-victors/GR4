@@ -1,6 +1,5 @@
 html {
     background-color: turquoise;
-    
 }
 
 .title{
@@ -13,12 +12,18 @@ html {
     color: #006060;
 }
 
-<<<<<<< HEAD
 .pageContainer{
     box-shadow: 10px 10px 5px #888888;
     background-color: white;
-
     overflow: hidden;
+}
+
+.column{
+    width: 20%;
+}
+
+.middleColumn{
+    width: 60%;
 }
 
 .contentPage{
