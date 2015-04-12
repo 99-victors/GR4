@@ -12,10 +12,13 @@ html {
     color: #006060;
 }
 
-.pageContainer{
-    box-shadow: 10px 10px 5px #888888;
-    background-color: white;
-    overflow: hidden;
+#body{
+    height: 100%;
+}
+
+#content{
+    background-color: #00E0E0;
+    height: 100%;
 }
 
 #columns{
@@ -32,9 +35,16 @@ html {
 }
 
 .contentPage{
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pageContainer{
+    box-shadow: 10px 10px 5px #888888;
+    background-color: white;
+    overflow: hidden;
+    height: 400px;
 }
 
 #searchBox{
