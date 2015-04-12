@@ -2,5 +2,7 @@
 // has finished loading in the browser.
 $(function() {
 
-    $("#content").load('Search/voluntariSearch.html?query=homeless'); //+ $('#searchBox').val());
+    $('#searchButton').click(function(){
+        $("#content").prop('data','Search/voluntariSearch.html?query=' + $('#searchBox').val());
+    })
 });

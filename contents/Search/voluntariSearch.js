@@ -31,7 +31,7 @@ $(function() {
         searchQuery = $.getUrlVar('query');
     }
     
-    $("#test").html(searchQuery);
+    $("#banner").html(searchQuery);
     
     
     
