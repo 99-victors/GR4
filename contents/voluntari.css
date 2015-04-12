@@ -5,8 +5,15 @@ html {
 
 .title{
     text-align: center;
+    background-color: #00C0C0;
+    padding: 18px;
+    margin: 0px;
+    border: 0px;
+    font: italic 32px sans-serif;
+    color: #006060;
 }
 
+<<<<<<< HEAD
 .pageContainer{
     box-shadow: 10px 10px 5px #888888;
     background-color: white;
