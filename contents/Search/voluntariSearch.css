@@ -1,5 +1,5 @@
 html {
-    background-color: white;
+    background-color: #FDFCDC;
     
 }
 
@@ -15,5 +15,18 @@ html {
     margin-right: auto;
 
     height: 100px;
-    text-align: center;
+}
+
+.event{
+    border-style: solid;
+    border-color: black;
+    border-top-width: 0px;
+    
+    width: inherit;
+}
+
+.eventName{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
 }
