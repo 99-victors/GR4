@@ -4,5 +4,6 @@ $(function() {
 
     $('#searchButton').click(function(){
         $("#content").prop('data','Search/voluntariSearch.html?query=' + $('#searchBox').val());
-    })
+    });
+
 });
