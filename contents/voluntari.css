@@ -18,16 +18,25 @@ html {
     overflow: hidden;
 }
 
+#columns{
+    width: 100%;
+}
+
 .column{
     width: 20%;
 }
 
 .middleColumn{
     width: 60%;
+    align-self: center;
 }
 
 .contentPage{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#searchBox{
+    width: 75%;
 }
