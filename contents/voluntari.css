@@ -3,4 +3,10 @@ html {
     
 }
 
-
+.contentPage{
+    box-shadow: 10px 10px 5px #888888;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -2,5 +2,5 @@
 // has finished loading in the browser.
 $(function() {
 
-    
-    });
+    $("#content").load('Search/voluntariSearch.html?query=homeless'); //+ $('#searchBox').val());
+});
