@@ -4,15 +4,19 @@
   -->
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Voluntari</title>
     <link type="text/css" href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
     <link type="text/css" href="voluntari.css" rel="stylesheet" />
+    <link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
 
     <script type="text/javascript" src="jquery/js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
     <script type="text/javascript" src="voluntari.js"></script>
-
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body id="theBody">
     <h1 class="title" id="title">v o l u n t a r i</h1>
@@ -20,10 +24,16 @@
       <tr>
         <td class="column" id="information"></td>
         <td class="middleColumn" id="search">
-          <input id="searchBox"></input>
-          <button id="searchButton">Search</button>
+          <div class="form-horizontal">
+            <input id="searchBox" class="form-control">
+            <button type="submit" class="btn" id="searchButton">Search</button>
+            <a id="advancedSearch" href="#">Advanced Search</a>
+          </div>
         </td>
         <td class="column" id="related"></td>
+      </tr>
+      <tr>
+        
       </tr>
     </table>
     <div class="pageContainer">
