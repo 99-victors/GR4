@@ -1,11 +1,10 @@
-html {
+html{
     background-color: #fff;
-    
 }
 
 .banner{
     text-align: center;
-    border-style:groove;
+    border-style: groove;
     border-color: black;
     background-color: #fff;
     color: black;
@@ -21,6 +20,8 @@ html {
     border-style: groove;
     border-color: black;
     border-top-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
     
     width: 50%;
 }
