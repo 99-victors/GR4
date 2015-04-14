@@ -12,6 +12,14 @@ html {
     color: #006060;
 }
 
+.navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
 body{
   height: 100%;
   padding-top: 50px;
