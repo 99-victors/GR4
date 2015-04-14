@@ -7,6 +7,10 @@ $(document).ready(function () {
         $("#content").prop('data', 'Search/voluntariSearch.html?query=' + $('#searchBox').val());
     });
 
+    $('#searchBox').keypress(function (e) {
+    	console.log(e);
+    });
+
     $('#advancedSearch').click(function () {
     	
     });
