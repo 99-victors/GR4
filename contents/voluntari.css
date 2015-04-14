@@ -20,6 +20,10 @@ html {
     margin: auto;
 }
 
+#banner{
+    height: 50px;
+}
+
 body{
   padding-top: 60px;
   padding-bottom: 20px;
@@ -43,7 +47,7 @@ body{
 }
 
 .navbar-brand{
-    font: italic 16pt sans-serif;
+    font: italic 15pt sans-serif;
 }
 
 .contentPage{
