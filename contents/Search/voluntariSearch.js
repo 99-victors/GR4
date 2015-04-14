@@ -48,13 +48,16 @@ $(function() {
     
         
     var searchQuery = "";
-        
-    if($.getUrlVar('query')){
-        searchQuery = $.getUrlVar('query');
+    
+    if($.getUrlVar('first') == "True"){
+            $("#banner").html("Upcoming Events Near You");    
     }
-    
-    $("#banner").html("Displaying Search Results for: " +searchQuery);
-    
+    else{
+        if($.getUrlVar('query')){
+            searchQuery = $.getUrlVar('query');
+        }    
+            $("#banner").html("Displaying Search Results for: " +searchQuery);
+    }
     
 /**********************************************************************************************************************************
 *
