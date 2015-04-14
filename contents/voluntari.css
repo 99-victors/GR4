@@ -1,4 +1,4 @@
-html {
+html{
     background-color: #888888;
 }
 
@@ -25,9 +25,10 @@ html {
 }
 
 body{
-  height: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
+    height: 100%;
+    background-color: #00C0C0;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 #content{
