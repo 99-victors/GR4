@@ -1,7 +1,7 @@
-#events{
-        width: 1000px;
-     visibility: hidden;
+.descriptor{
+    font-weight: bold;
 }
+
 
 /*----- Tabs -----*/
 .tabs {

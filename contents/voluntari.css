@@ -1,5 +1,5 @@
 html {
-    background-color: turquoise;
+    background-color: #888888;
 }
 
 .title{
@@ -12,10 +12,22 @@ html {
     color: #006060;
 }
 
-.pageContainer{
-    box-shadow: 10px 10px 5px #888888;
-    background-color: white;
-    overflow: hidden;
+.navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+body{
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#content{
+    height: 100%;
 }
 
 #columns{
@@ -32,9 +44,16 @@ html {
 }
 
 .contentPage{
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pageContainer{
+    box-shadow: 10px 10px 5px #888888;
+    background-color: white;
+    overflow: hidden;
+    height: 400px;
 }
 
 #searchBox{

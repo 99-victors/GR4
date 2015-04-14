@@ -1,13 +1,13 @@
 html {
-    background-color: #FDFCDC;
+    background-color: #fff;
     
 }
 
 .banner{
     text-align: center;
-    border-style: solid;
+    border-style:groove;
     border-color: black;
-    background-color: #FDFCDC;
+    background-color: #fff;
     color: black;
     
     width: 90%;
@@ -18,7 +18,7 @@ html {
 }
 
 .event{
-    border-style: solid;
+    border-style: groove;
     border-color: black;
     border-top-width: 0px;
     
