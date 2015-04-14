@@ -1,5 +1,8 @@
 // This allows the Javascript code inside this block to only run when the page
 // has finished loading in the browser.
+
+var ENTER = 13;
+
 $(document).ready(function () {
     $("#content").prop('data', 'Search/voluntariSearch.html?first=True');
 
@@ -10,7 +13,7 @@ $(document).ready(function () {
     $('#searchButton').click(performSearch);
 
     $('#searchBox').keypress(function (e) {
-    	if (e.which === 13) {
+    	if (e.which === ENTER) {
     		performSearch();
     	}
     });
