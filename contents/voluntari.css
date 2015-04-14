@@ -43,6 +43,10 @@ body{
     align-self: center;
 }
 
+.navbar-brand{
+    font: italic 16pt sans-serif;
+}
+
 .contentPage{
     width: 100%;
     margin-left: auto;
