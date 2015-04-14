@@ -3,13 +3,19 @@
 $(document).ready(function () {
     $("#content").prop('data', 'Search/voluntariSearch.html?first=True');
 
-    $('#searchButton').click(function () {
+    var performSearch = function () {
         $("#content").prop('data', 'Search/voluntariSearch.html?query=' + $('#searchBox').val());
-    });
+    };
+
+    $('#searchButton').click(performSearch);
 
     $('#searchBox').keypress(function (e) {
-    	console.log(e);
+    	if (e.which === 13) {
+    		performSearch();
+    	}
     });
+
+
 
     $('#advancedSearch').click(function () {
     	
