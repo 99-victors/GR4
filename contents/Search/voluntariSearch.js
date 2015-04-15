@@ -81,12 +81,12 @@ $(function() {
     "<div class=\"row entry\">" +
         "<div class=\"col-md-4\"></div>"+
         "<div class=\"col-md-2\">Mon: 2pm - 7pm</div>"+
-        "<div class=\"col-md-2\"><button>See Map</button> <button>More Info</button></div>"+
+        "<div class=\"col-md-2\"><button>See Map</button></div>"+
     "</div>"+
     "<div class=\"row entry\">"+
         "<div class=\"col-md-4\"></div>"+
         "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization Page/organization.html\">Cambridge Women's Center</a></div>"+
-        "<div class=\"col-md-2\">555-555-5556</div>"+
+        "<div class=\"col-md-2\">617-555-5555</div>"+
     "</div>"+
     "<div class=\"row entry\">"+
         "<div class=\"col-md-4\"></div>"+
@@ -100,12 +100,12 @@ $(function() {
     "<div class=\"row entry\">" +
         "<div class=\"col-md-4\"></div>"+
         "<div class=\"col-md-2\">Tues: 10am - 12pm</div>"+
-        "<div class=\"col-md-2\"><button>See Map</button> <button>More Info</button></div>"+
+        "<div class=\"col-md-2\"><button>See Map</button></div>"+
     "</div>"+
     "<div class=\"row entry\">"+
         "<div class=\"col-md-4\"></div>"+
         "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization Page/organization.html\">Cambridge Women's Center</a></div>"+
-        "<div class=\"col-md-2\">555-555-5556</div>"+
+        "<div class=\"col-md-2\">617-555-5555</div>"+
     "</div>"+
     "<div class=\"row entry\">"+
         "<div class=\"col-md-4\"></div>"+
