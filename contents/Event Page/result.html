@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Results Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+  <!-- Custom styles -->
+  <link type="text/css" href="organization.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2 id="banner">Soup Kitchen Cooking</h2>
+      </div>
+
+
+      <div id="eventInfo"><div>Show up Sunday, 10 AM</div><div id="roomLeft">Room left for: 20</div></div>
+
+      <img src='map.png' alt='location map'/>
+
+      <div id="location">Boston Area Homeless Shelter</div>
+
+      <input type="radio" name="going" value="self"/>I'm going by myself<br/>
+      <input type="radio" name="going" value="others"/>I'm bringing <input type="text" name="numOthers"/> other people<br/>
+
+      I'm planning on showing up at <input type="text" name="whenShowing"/>. 
+
+      <button>Submit</button>
+
+    </div>
+
+    
+    <script type="text/javascript" src="../jquery/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="organization.js"></script>
+
+    
+</body>
+</html>
