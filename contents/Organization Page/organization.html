@@ -1,37 +1,62 @@
 <!DOCTYPE html>
-<!--
-   Victor Lopez, Shi Ke Xue, Ray Hua Wu, Asya Bergal
+<html lang="en">
+<head>
+  <title>Organization Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+  <!-- Custom styles -->
+  <link type="text/css" href="organization.css" rel="stylesheet" />
 
-    Tab Structure From: http://inspirationalpixels.com/tutorials/creating-tabs-with-html-css-and-jquery
+</head>
+<body>
 
-  -->
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Voluntari</title>
-    <link type="text/css" href="../jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
-    <link type="text/css" href="organization.css" rel="stylesheet" />
+    <div class="container">
+      <div class="jumbotron">
+        <h2 id="banner">Cambridge Women's Center</h2>
+      </div>
 
-    <script type="text/javascript" src="../jquery/js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="../jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
-    <script type="text/javascript" src="organization.js"></script>
 
-  </head>
-  <body>
-    <h1 id="title">Cambridge Women's Center</h1>
- 
-      <div class="tabs">
-    <ul class="tab-links">
-        <li class="active"><a href="#tab1">Events</a></li>
-        <li><a href="#tab2">About Us</a></li>
+
+    <ul class="nav nav-tabs">
+
+        <li class="active"><a data-toggle="tab" href="#eventsTab">Events</a></li>
+
+        <li><a data-toggle="tab" href="#infoTab">About Us</a></li>
+
     </ul>
- 
+
     <div class="tab-content">
-        <div id="tab1" class="tab active" height="500">
-            #todo
+
+        <div id="eventsTab" class="tab-pane fade in active">
+
+            <div class="row event">
+                <div class="col-md-3"></div>
+                <div class="col-md-8"><a class="eventName" href="https://www.google.com">Mechanics Training</a></div>
+            </div>
+            <div class="row entry">
+                <div class="col-md-4"></div>
+                <div class="col-md-2">Sun: 1pm - 2pm</div>
+                <div class="col-md-2"><button>See Map</button> <button>More Info</button></div>
+            </div>
+            <div class="row entry">
+                <div class="col-md-4"></div>
+                <div class="col-md-2"><a class="organization">Bikes Not Bombs</a></div>
+                <div class="col-md-2">555-555-5555</div>
+            </div>
+            <div class="row entry">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">18 Bartlett Sq. Jamaica Plain, MA 02319</div>
+            </div>
+   
+
         </div>
- 
-        <div id="tab2" class="tab">
+
+        <div id="infoTab" class="tab-pane fade">
+
             <table>
                 <tr><p><p class="descriptor">Mission Statment:</p> To provide women with the resources and support they need to emerge from conditions of domestic violence, sexual abuse, poverty, discrimination, social isolation, and degradation. To challenge and change the attitudes, actions, and institutions that subjugate women.</p></tr>
                 <tr><p><p class="descriptor">Location:</p> 46 Plesant St. Cambridge, MA 02319</p></tr>
@@ -43,7 +68,14 @@
         </div>
 
     </div>
-</div>  
-      
-    </body>
+
+    </div>
+
+    
+    <script type="text/javascript" src="../jquery/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="organization.js"></script>
+
+    
+</body>
 </html>

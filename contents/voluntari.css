@@ -31,6 +31,7 @@ body{
 }
 
 #columns{
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -53,7 +54,7 @@ body{
     box-shadow: 10px 10px 5px #888888;
     background-color: white;
     overflow: hidden;
-    height: 400px;
+    height: 600px;
 }
 
 #searchBox{

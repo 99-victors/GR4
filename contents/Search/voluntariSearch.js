@@ -28,16 +28,6 @@ $(function() {
 *
 ***********************************************************************************************************************************/        
     
-    var addEntry = function(event, organization){
-        var entry = "<div>"+
-            "<table class=\"event\" align=\"center\">" +
-               " <tr><td><a class=\" "+ event.page +"\" href=\""+ event.link + "\">" + event.name + "</a></td></tr>"+
-                "<tr><td><p>" + event.time + "</p></td> <td><button>See Map</button></td> <td><button>More Info</button></td></tr>"+
-                "<tr><td class=\"Organization\">" + organization.name+ "</td> <td>"+organization.tel+"</td></tr>"+
-                "<tr><td>"+organization.addr+"</td></tr>"+
-              "</table>"+
-            "</div>";
-    };
     
     
 /**********************************************************************************************************************************
@@ -56,7 +46,30 @@ $(function() {
         if($.getUrlVar('query')){
             searchQuery = $.getUrlVar('query');
         }    
-            $("#banner").html("Displaying Search Results for: " +searchQuery);
+        $("#banner").html("Search Results");
+    }
+    
+    if(searchQuery.indexOf("home") > -1 || searchQuery.indexOf("less") > -1 || searchQuery.indexOf("center") > -1){
+        $('#results').html(
+           " <div class=\"row event\">" +
+        "<div class=\"col-md-3\"></div>" +
+        "<div class=\"col-md-8\"><a class=\"eventName\" href=\"https://www.google.com\">Soup Kitchen Cooking</a></div>" +
+    "</div>" +
+    "<div class=\"row entry\">" +
+        "<div class=\"col-md-4\"></div>"+
+        "<div class=\"col-md-2\">Sun: 10am - 3pm</div>"+
+        "<div class=\"col-md-2\"><button>See Map</button> <button>More Info</button></div>"+
+    "</div>"+
+    "<div class=\"row entry\">"+
+        "<div class=\"col-md-4\"></div>"+
+        "<div class=\"col-md-2\"><a class=\"organization\">Cambridge Homeless Center</a></div>"+
+        "<div class=\"col-md-2\">555-555-5556</div>"+
+    "</div>"+
+    "<div class=\"row entry\">"+
+        "<div class=\"col-md-4\"></div>"+
+        "<div class=\"col-md-4\">539 Massachusetts Avenue, Cambridge, MA, 02319</div>"+
+    "</div>"
+        );
     }
     
 /**********************************************************************************************************************************

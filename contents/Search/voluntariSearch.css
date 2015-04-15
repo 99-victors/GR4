@@ -3,6 +3,14 @@ html {
     
 }
 
+.event{
+    margin-top:20px;
+}
+
+.entry{
+    margin-top:15px;
+}
+
 .banner{
     text-align: center;
     border-style:groove;
@@ -10,23 +18,16 @@ html {
     background-color: #fff;
     color: black;
     
-    width: 90%;
+    width: 34%;
     margin-left: auto;
     margin-right: auto;
 
-    height: 100px;
+    height: 50px;
 }
 
-.event{
-    border-style: groove;
-    border-color: black;
-    border-top-width: 0px;
-    
-    width: inherit;
-}
 
 .eventName{
-    color: blue;
     text-decoration: underline;
     font-weight: bold;
+    font-size: 20px;
 }
