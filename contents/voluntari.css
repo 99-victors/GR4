@@ -1,4 +1,4 @@
-html {
+html{
     background-color: #888888;
 }
 
@@ -20,10 +20,15 @@ html {
     margin: auto;
 }
 
+#banner{
+    height: 50px;
+}
+
 body{
-  height: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
+    height: 100%;
+    /* background-color: #00C0C0; */
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 #content{
@@ -44,6 +49,10 @@ body{
     align-self: center;
 }
 
+.navbar-brand{
+    font: italic 15pt sans-serif;
+}
+
 .contentPage{
     width: 100%;
     margin-left: auto;
@@ -55,8 +64,4 @@ body{
     background-color: white;
     overflow: hidden;
     height: 600px;
-}
-
-#searchBox{
-    width: 75%;
 }
