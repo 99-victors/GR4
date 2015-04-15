@@ -85,7 +85,7 @@ $(function() {
     "</div>"+
     "<div class=\"row entry\">"+
         "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization Page/organization.html\">Cambridge Women's Center</a></div>"+
+        "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization/organization.html\">Cambridge Women's Center</a></div>"+
         "<div class=\"col-md-2\">617-555-5555</div>"+
     "</div>"+
     "<div class=\"row entry\">"+
@@ -104,7 +104,7 @@ $(function() {
     "</div>"+
     "<div class=\"row entry\">"+
         "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization Page/organization.html\">Cambridge Women's Center</a></div>"+
+        "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization/organization.html\">Cambridge Women's Center</a></div>"+
         "<div class=\"col-md-2\">617-555-5555</div>"+
     "</div>"+
     "<div class=\"row entry\">"+
