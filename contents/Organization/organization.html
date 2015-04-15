@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker.css">
     
   <!-- Custom styles -->
   <link type="text/css" href="organization.css" rel="stylesheet" />
@@ -23,37 +25,40 @@
       </ul>
       <div class="tab-content">
         <div id="eventsTab" class="tab-pane fade in active">
+          <div class="row entry">
+            <div class="col-md-3"></div></div>
+          <div class="row entry">
+            <div class="col-md-8">
+            <span class="input-group-btn">
+              <button class="btn btn-default btn-lg" type="button" id="addButton" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-plus" style="font-size: 15px"></span>
+              <b>Add Event</b></button>
+            </span>
+            </div>
+          </div>
           <div class="row event">
-            <div class="col-md-3"></div>
             <div class="col-md-8"><a class="eventName" href="https://www.google.com">Meditation and Discussion</a></div>
           </div>
           <div class="row entry">
-            <div class="col-md-4"></div>
-            <div class="col-md-2">Mon: 2pm - 7pm</div>
+            <div class="col-md-2 time"><b>Mon: 2pm - 7pm</b></div>
           </div>
           <div class="row entry">
-            <div class="col-md-4"></div>                
             <div class="col-md-5">Come find calm and discuss and connect with others over food.</div>
           </div>
             <div class="row entry">
-            <div class="col-md-4"></div>
-            <div class="col-md-5">Skills Needed: Listening</div>
+            <div class="col-md-5"><em>Skills Needed: Listening</em></div>
           </div>
           <div class="row event">
-            <div class="col-md-3"></div>
             <div class="col-md-8"><a class="eventName" href="../Event/result.html">Soup Kitchen Cooking</a></div>
           </div>
           <div class="row entry">
-            <div class="col-md-4"></div>
-            <div class="col-md-2">Tues: 10am - 12pm</div>   
+            <div class="col-md-2 time"><b>Tues: 10am - 12pm</b></div>   
           </div>
           <div class="row entry">
-            <div class="col-md-4"></div>                
             <div class="col-md-5">Help provide food for homeless women</div>
           </div>
           <div class="row entry">
-            <div class="col-md-4"></div>
-            <div class="col-md-5">Skills Needed: Cooking</div>
+            <div class="col-md-5"><em>Skills Needed: Cooking</em></div>
           </div>            
         </div>
         <div id="infoTab" class="tab-pane fade">
@@ -69,9 +74,64 @@
       </div>
     </div>
 
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Add Event</h4>
+          </div>
+          <div class="modal-body">
+             <form id="eventForm" role="form">
+              <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="title" class="form-control" id="title">
+              </div>
+              <div class="form-group">
+                    <label for="Time">Time:</label>
+                <div class="input-group date">
+                    <input type="text" class="form-control" id="datepicker"></input>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="location" class="form-control" id="location"></input>
+              </div>
+              <div class="form-group">
+                <label for="desc">Description:</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="skills">Skills needed:</label>
+                <input type="location" class="form-control" id="location"></input>
+              </div>
+              <div class="form-group">
+                <label for="people">Number of people needed:</label>
+                <input type="people" class="form-control" id="people"></input>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="../jquery/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="../jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
     <script type="text/javascript" src="organization.js"></script>    
+
+    <script>
+    $(document).ready(function() {
+        $('#datepicker').datepicker({});
+    });
+    </script>
+
   </body>
 </html>
