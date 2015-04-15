@@ -1,0 +1,21 @@
+.descriptor{
+    font-weight: bold;
+}
+
+#roomLeft{
+    text-align: right;
+}
+
+.event{
+    margin-top:20px;
+}
+
+.entry{
+    margin-top:15px;
+}
+
+.eventName{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
