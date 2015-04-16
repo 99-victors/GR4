@@ -53,7 +53,7 @@ $(function() {
         $('#results').html(
            " <div class=\"row event\">" +
         "<div class=\"col-md-3\"></div>" +
-        "<div class=\"col-md-8\"><a class=\"eventName\" href=\"https://www.google.com\">Soup Kitchen Cooking</a></div>" +
+        "<div class=\"col-md-8\"><a class=\"eventName\" href=\"../Event/result.html\">Soup Kitchen Cooking</a></div>" +
     "</div>" +
     "<div class=\"row entry\">" +
         "<div class=\"col-md-4\"></div>"+
