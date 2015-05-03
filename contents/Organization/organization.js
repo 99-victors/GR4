@@ -1,6 +1,9 @@
 $(document).ready(function() {
     //$('#datepicker').datepicker({});
-    $('#navbar').load('../partials/navbar.html');
+    $('#navbar').load('../partials/navbar.html', function() {
+    	$('#navbar-home').attr("href", "../voluntari.html");
+    });
+    
 
     $('.tabs .tab-links a').on('click', function(e)  {
         var currentAttrValue = $(this).attr('href');
