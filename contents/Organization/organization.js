@@ -1,12 +1,18 @@
-jQuery(document).ready(function() {
-    jQuery('.tabs .tab-links a').on('click', function(e)  {
-        var currentAttrValue = jQuery(this).attr('href');
+$(document).ready(function() {
+    //$('#datepicker').datepicker({});
+    $('#navbar').load('../partials/navbar.html', function() {
+    	$('#navbar-home').attr("href", "../voluntari.html");
+    });
+    
+
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
  
         // Show/Hide Tabs
-        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+        $('.tabs ' + currentAttrValue).show().siblings().hide();
  
         // Change/remove current tab to active
-        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
  
         e.preventDefault();
     });
