@@ -3,6 +3,7 @@
 
 $(document).ready(function () {
     var ENTER = 13;
+    $("#navbar").load("partials/navbar.html"); 
     
     $("#content").prop('data', 'Search/voluntariSearch.html?first=True');
 
