@@ -10,52 +10,28 @@ $(document).ready(function () {
         $('#navbar-logout').attr('href', './homepage.html');
     }); 
     document.cookie="usertype=Volunteer";
-
-    $('#results').append(new Event({
-        desc: 'Learn how to fix up bikes.',
-        title: 'Mechanics Training',
-        time: 'Sun: 1pm - 2pm',
-        org: 'Bikes Not Bombs',
-        tele: '555-555-5555',
-        address: '18 Bartlett Sq. Jamaica Plain, MA 02130',
-        skills: 'None'
-    }).toHTML());
-
-    $('#results').append(new Event({
-        desc: 'Pack up books in boxes to be shipped to prisons.',
-        title: 'Book Packing',
-        time: 'Sun: 3pm - 8pm',
-        org: 'Prison Books',
-        tele: '555-555-5556', 
-        address: '1306 Hancock St. Quincy, MA 02169',
-        skills: 'None'
-    }).toHTML());
-
-    $('#results').append(new Event({
-        desc: 'Help act as waiters for our guests and serve food.',
-        title: 'Serving Food',
-        time: 'Sun: 3pm - 9pm',
-        org: 'Rosie\'s Place',
-        tele: '555-555-5557',
-        address: '889 Harisson Ave. Boston, MA 02118',
-        skills: 'None'
-    }).toHTML());  
+    console.log(data);
+    for (var i = 0; i < data.homepage.length; i++) {
+        $('#results').append(data.homepage[i].toHTML());    
+    }
 
     var performSearch = function () {
         //$('#content').prop('data', 'Search/voluntariSearch.html?query=' + $('#searchBox').val());
-      var searchQuery =  $('#searchBox').val();    
-      console.log("search");
-      if(searchQuery.indexOf("home") > -1 || searchQuery.indexOf("less") > -1 || searchQuery.indexOf("center") > -1){
-          $('#results').load('partials/homelessSearch.html');
-      }
+        var searchQuery =  $('#searchBox').val();    
+        console.log("search");
+        if(searchQuery.indexOf("home") > -1 || searchQuery.indexOf("less") > -1 || searchQuery.indexOf("center") > -1){
+            $('#results').empty();
+            for (var i = 0; i < data.homeless.length; i++) {
+                $('#results').append(data.homeless[i].toHTML());    
+            }
+        }
 
-      if(searchQuery.indexOf("women") > -1){
-          $('#results').load('partials/womenSearch.html');
-              console.log("ladies");
-
-      }
-
-  
+        if(searchQuery.indexOf("women") > -1) {
+            $('#results').empty();
+            for (var i = 0; i < data.homepage.length; i++) {
+                $('#results').append(data.women[i].toHTML());
+            }
+        }  
     };
 
     $('#searchButton').click(performSearch);
