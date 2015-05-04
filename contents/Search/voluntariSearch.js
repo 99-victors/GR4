@@ -49,26 +49,7 @@ $(function() {
     }
     
     if(searchQuery.indexOf("home") > -1 || searchQuery.indexOf("less") > -1 || searchQuery.indexOf("center") > -1){
-        $('#results').html(
-           " <div class=\"row event\">" +
-        "<div class=\"col-md-3\"></div>" +
-        "<div class=\"col-md-8\"><a class=\"eventName\" href=\"../Event/result.html\">Soup Kitchen Cooking</a></div>" +
-    "</div>" +
-    "<div class=\"row entry\">" +
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\">Sun: 10am - 3pm</div>"+
-        "<div class=\"col-md-2\"><button>See Map</button> <button>More Info</button></div>"+
-    "</div>"+
-    "<div class=\"row entry\">"+
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\"><a class=\"organization\">Cambridge Homeless Center</a></div>"+
-        "<div class=\"col-md-2\">555-555-5556</div>"+
-    "</div>"+
-    "<div class=\"row entry\">"+
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-4\">539 Massachusetts Avenue, Cambridge, MA, 02319</div>"+
-    "</div>"
-        );
+        $('#results').load('../partials/homelessSearch.html');
     }
     
     if(searchQuery.indexOf("women") > -1){
