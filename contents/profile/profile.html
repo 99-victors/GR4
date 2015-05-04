@@ -30,7 +30,7 @@
 
           </div>
           <div class="row event">
-            <div class="col-md-8"><a class="eventName" href="https://www.google.com">Meditation and Discussion</a></div>
+            <div class="col-md-8"><a class="eventName" href="">Meditation and Discussion</a></div>
           </div>
           <div class="row entry">
             <div class="col-md-2 time"><b>Mon: 2pm - 7pm</b></div>
@@ -57,12 +57,13 @@
         <div id="infoTab" class="tab-pane fade">
         <div class="row col-md-8">
           <table>
-            <tr><p><p class="descriptor">Mission Statment:</p> To provide women with the resources and support they need to emerge from conditions of domestic violence, sexual abuse, poverty, discrimination, social isolation, and degradation. To challenge and change the attitudes, actions, and institutions that subjugate women.</p></tr>
-              <tr><p><p class="descriptor">Location:</p> 46 Plesant St. Cambridge, MA 02319</p></tr>
-              <tr><img src="map.png"/></tr>
-              <tr><p><p class="descriptor">Email:</p> info@cambridgewomenscenter.org</p></tr>
-              <tr><p><p class="descriptor">Tel:</p> 617-555-5555</p></tr>
-              <tr><p><p class="descriptor">Website:</p> <a  href="www.cambridgewomenscenter.org/aboutus.html">www.cambridgewomenscenter.org/aboutus.html</a></p></tr>
+            <tr><p><p class="descriptor">Interests:</p> <p id="interests"> Some of my main interests are human advocacy groups. It is very important to me to see that everyone is treated fairly despite of who they are.</p></p></tr>
+            <tr><p><p class="descriptor">Skills:</p> <p id="skill">Some of my skills include sewing, welding, and fencing.</p></p></tr>
+                
+            <tr><p><p class="descriptor">Location:</p> <p id="location">46 Plesant St. Cambridge, MA 02319</p></p></tr>
+              
+              <tr><p><p class="descriptor">Email:</p> <p id="email">victor@99victors.org</p></p></tr>
+              <tr><p><p class="descriptor">Tel:</p> <p id="tel">617-555-5555</p></p></tr>
           </table>
           </div>
         </div>
@@ -74,43 +75,35 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Add Event</h4>
+            <h4 class="modal-title" id="myModalLabel">Edit Info</h4>
           </div>
           <div class="modal-body">
              <form id="eventForm" role="form">
               <div class="form-group">
-                <label for="title">Title:</label>
+                <label for="interests">Interests:</label>
                 <br/>
-                <input type="title" class="form-control" id="title">
+                <input type="interests" class="form-control" id="interest">
               </div>
               <div class="form-group">
-                    <label for="Time">Time:</label>
-                <div class="input-group date">
-                    <input type="text" class="form-control" id="datepicker"></input>
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
+                              <div class="form-group">
+            <label for="skills">Skills needed:</label>
+                <br/>
+                <input type="skills" class="form-control" id="location"></input>
               </div>
-              <div class="form-group">
+
                 <label for="location">Location:</label>
                 <br/>
                 <input type="location" class="form-control" id="location"></input>
               </div>
               <div class="form-group">
-                <label for="desc">Description:</label>
+                <label for="tel">Email:</label>
                 <br/>
-                <textarea class="form-control" rows="3"></textarea>
-              </div>
+                <input type="tel" class="form-control" id="people"></input>
+              </div>          
               <div class="form-group">
-                <label for="skills">Skills needed:</label>
+                <label for="tel">Tel:</label>
                 <br/>
-                <input type="location" class="form-control" id="location"></input>
-              </div>
-              <div class="form-group">
-                <label for="people">Number of people needed:</label>
-                <br/>
-                <input type="people" class="form-control" id="people"></input>
+                <input type="tel" class="form-control" id="people"></input>
               </div>
             </form>
           </div>
