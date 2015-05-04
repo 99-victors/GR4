@@ -17,6 +17,12 @@
   width: 300px;
 }
 
+#desc{
+ margin-top: -75px;
+ font-style: italic;
+  font-size: 20px;
+}
+
 #others{
   width: 50px; 
 }
