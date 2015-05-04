@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  document.cookie="usertype=Volunteer";
+  document.cookie="usertype=Organization";
   $('#orglink').attr('href', 'Organization/organization.html');
 
   $('#volunteerLink').attr('href', 'voluntari.html');
@@ -9,6 +9,7 @@ $(document).ready(function () {
   
   $('#volunteerLink').click(function(){
     document.cookie="usertype=Volunteer ;domain=.contents;path=/";
+    console.log("clicked")
   });
   
   $('#orglink').click(function(){

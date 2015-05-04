@@ -9,6 +9,7 @@ $(document).ready(function () {
         $('#navbar-home').attr('href', './voluntari.html');
         $('#navbar-logout').attr('href', './homepage.html');
     }); 
+    document.cookie="usertype=Volunteer";
 
     $('#results').append(new Event({
         desc: 'Learn how to fix up bikes.',
