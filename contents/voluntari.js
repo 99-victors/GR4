@@ -43,19 +43,42 @@ $(document).ready(function () {
 
     var performSearch = function () {
         //$('#content').prop('data', 'Search/voluntariSearch.html?query=' + $('#searchBox').val());
-      var searchQuery =  $('#searchBox').val();    
-      console.log("search");
-      if(searchQuery.indexOf("home") > -1 || searchQuery.indexOf("less") > -1 || searchQuery.indexOf("center") > -1){
-          $('#results').load('partials/homelessSearch.html');
-      }
+        var searchQuery =  $('#searchBox').val();    
+        console.log("search");
+        if(searchQuery.indexOf("home") > -1 || searchQuery.indexOf("less") > -1 || searchQuery.indexOf("center") > -1){
+            $('#results').empty();
+            $('#results').append(new Event({
+                desc: 'Help cook for our soup kitchen.',
+                title: 'Soup Kitchen Cooking',
+                time: 'Sun: 10am - 3pm',
+                org: 'Cambridge Homeless Center',
+                tele: '555-555-5558',
+                address: '537 Massachusetts Avenue, Cambridge, MA, 02319',
+                skills: 'Cooking'
+            }).toHTML());
+        }
 
-      if(searchQuery.indexOf("women") > -1){
-          $('#results').load('partials/womenSearch.html');
-              console.log("ladies");
-
-      }
-
-  
+        if(searchQuery.indexOf("women") > -1) {
+            $('#results').empty();
+            $('#results').append(new Event({
+                desc: 'Come find calm and discuss and connect with others over food.',
+                title: 'Meditation and Discussion',
+                time: 'Mon: 2pm - 7pm',
+                org: 'Cambridge Women\'s Center',
+                tele: '555-555-5559',
+                address: '539 Massachusetts Avenue, Cambridge, MA, 02319',
+                skills: 'Listening'
+            }).toHTML());
+            $('#results').append(new Event({
+                desc: 'Help cook for our soup kitchen.',
+                title: 'Daily Kitchen Cooking',
+                time: 'Tues: 10am - 12pm',
+                org: 'Cambridge Women\'s Center',
+                tele: '555-555-5559',
+                address: '539 Massachusetts Avenue, Cambridge, MA, 02319',
+                skills: 'Cooking'
+            }).toHTML());
+        }  
     };
 
     $('#searchButton').click(performSearch);
