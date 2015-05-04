@@ -33,4 +33,25 @@ var Event = function(data) {
 
 		return output;
 	};
+
+	this.toOrgHTML = function() {
+		var output = '';
+		output += '<div class="row event">';
+		output += '  <div class="col-md-8"><a class="eventName" href="https://www.google.com">' + data.title + '</a></div>';
+		output += '</div>';
+		output += '<div class="row entry">';
+		output += '  <div class="col-md-2 time"><b>' + data.time + '</b></div>';
+		output += '</div>';
+		output += '<div class="row entry">';
+		output += '  <div class="col-md-5 time">' + data.address + '</div>';
+		output += '</div>';
+		output += '<div class="row entry">';
+		output += '  <div class="col-md-5">' + data.desc + '</div>';
+		output += '</div>';
+		output += '<div class="row entry">';
+		output += '  <div class="col-md-5"><em>Skills Needed: ' + data.skills + '</em></div>';
+		output += '</div>';
+
+		return output;
+	}
 };

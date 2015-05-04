@@ -6,7 +6,6 @@ $(document).ready(function() {
       	$('#navbar-logout').attr('href', '../homepage.html');
     });
 
-  
     function getCookie(cname) {
         var name = cname + "=";
         var ca = document.cookie.split(';');
@@ -21,22 +20,26 @@ $(document).ready(function() {
     var isVol = getCookie("usertype") == "Volunteer";
   
     $('#events-tab-content').load('events.html', function() {
-        
         if (isVol) {
           $('#addbutton').hide()
         }
-
+        for (var i = 0; i < data.homepage.length; i++) {
+            $('#events-tab-content').append(data.women[i].toOrgHTML());
+        }
 
     	$('#add-form').load('add.html', function() {
 	    	$('#datetimepicker').datetimepicker();
 	    	$('#add-event-button').click(function(e) {
 	    		if (confirm('Are you sure you want to add this event?')) {
 	    			var event = new Event({
-	    				title: $('#title').val(),
-	    				time: $('#datetimepicker').val(), 
-	    				desc: $('#description').val(),
-	    				skills: $('#skills').val(),
-	    			});
+                        desc: $('#description').val(),
+                        title: $('#title').val(),
+                        time: $('#datetimepicker').val(),
+                        org: 'Cambridge Women\'s Center',
+                        tele: '555-555-5559',
+                        address: $('#location').val(),
+                        skills: $('#skills').val()
+                    });
 	    			$('#events-tab-content').append(event.toHTML());
 	    			$('#add-form').modal('hide');
 	    		}
