@@ -6,5 +6,6 @@ $(document).ready(function() {
       	$('#navbar-prof').attr('href', '../profile/profile.html');
 
     });
-    
+    var mapOptions = {zoom: 8, center: latlng, mapTypeId: google.maps.MapTypeId.ROADMAP};    
+    var map = new google.maps.Map(mapDiv, mapOptions);
 });
