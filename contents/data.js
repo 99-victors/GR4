@@ -6,7 +6,9 @@ var data = {
 	        org: 'Bikes Not Bombs',
 	        tele: '555-555-5555',
 	        address: '18 Bartlett Sq. Jamaica Plain, MA 02130',
-	        skills: 'None'
+	        skills: 'None',
+            type:  'home',
+            num: '0'
 	    }), new Event({
 	        desc: 'Pack up books in boxes to be shipped to prisons.',
 	        title: 'Book Packing',
@@ -14,7 +16,10 @@ var data = {
 	        org: 'Prison Books',
 	        tele: '555-555-5556', 
 	        address: '1306 Hancock St. Quincy, MA 02169',
-	        skills: 'None'
+	        skills: 'None',
+            type:  'home',
+            num: '1'
+
 	    }), new Event({
 	        desc: 'Help act as waiters for our guests and serve food.',
 	        title: 'Serving Food',
@@ -22,7 +27,10 @@ var data = {
 	        org: 'Rosie\'s Place',
 	        tele: '555-555-5557',
 	        address: '889 Harisson Ave. Boston, MA 02118',
-	        skills: 'None'
+	        skills: 'None',
+            type:  'home',
+            num: '2'
+
 	    })],
     homeless: [new Event({
 	        desc: 'Help cook for our soup kitchen.',
@@ -31,7 +39,10 @@ var data = {
 	        org: 'Cambridge Homeless Center',
 	        tele: '555-555-5558',
 	        address: '537 Massachusetts Avenue, Cambridge, MA, 02319',
-	        skills: 'Cooking'
+	        skills: 'Cooking',
+            type:  'homeless',
+            num: '0'
+
 	    })],
     women: [new Event({
             desc: 'Come find calm and discuss and connect with others over food.',
@@ -40,7 +51,10 @@ var data = {
             org: 'Cambridge Women\'s Center',
             tele: '555-555-5559',
             address: '539 Massachusetts Avenue, Cambridge, MA, 02319',
-            skills: 'Listening'
+            skills: 'Listening',
+            type:  'women',
+            num: '0'
+
         }), new Event({
             desc: 'Help cook for our soup kitchen.',
             title: 'Daily Kitchen Cooking',
@@ -48,6 +62,9 @@ var data = {
             org: 'Cambridge Women\'s Center',
             tele: '555-555-5559',
             address: '539 Massachusetts Avenue, Cambridge, MA, 02319',
-            skills: 'Cooking'
+            skills: 'Cooking',
+            type:  'women',
+            num: '1'
+
         })]
 };

@@ -12,6 +12,7 @@ $(document).ready(function () {
     document.cookie="usertype=Volunteer";
     console.log(data);
     for (var i = 0; i < data.homepage.length; i++) {
+        console.log(data.homepage[i])
         $('#results').append(data.homepage[i].toHTML());    
     }
 
