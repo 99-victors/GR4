@@ -48,15 +48,14 @@ $(document).ready(function() {
       
       $('#edit-form').load('edit.html', function(){
         $('#edit-button').click(function(e){
- 		if (confirm('Are you sure you want to update this information?')) {          
-          $('#mission').html($('#miss').val())
-          $('#info').html($('#mail').val())
-          $('#tele').html($('#phone').val())
-          $('#page').html($('#site').val()) 
-      	  $('#page').attr('href', $('#site').val());
-	      $('#edit-form').modal('hide');
-          
-        }
+     		if (confirm('Are you sure you want to update this information?')) {          
+              $('#mission').html($('#miss').val());
+                $('#info').html($('#mail').val());
+                $('#tele').html($('#phone').val());
+                $('#page').html($('#site').val());
+              	$('#page').attr('href', $('#site').val());
+        	    $('#edit-form').modal('hide');
+            }
         });
       });
     });
@@ -71,7 +70,7 @@ $(document).ready(function() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};*/
 
-    $('#info-tab-content').load('info.html', function() {
+    $('#info-tab-content').load('cwc-info.html', function() {
     	/*var map = new google.maps.Map($('#map-canvas')[0], mapOptions);
 	    geocoder.geocode({'address': address}, function(results, status) {
 	    	if (status == google.maps.GeocoderStatus.OK) {

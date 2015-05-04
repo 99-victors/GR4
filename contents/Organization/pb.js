@@ -23,9 +23,7 @@ $(document).ready(function() {
         if (isVol) {
           $('#addbutton').hide()
         }
-        for (var i = 0; i < data.homepage.length; i++) {
-            $('#events-tab-content').append(data.women[i].toOrgHTML());
-        }
+        $('#events-tab-content').append(data.homepage[1].toOrgHTML());
 
     	$('#add-form').load('add.html', function() {
 	    	$('#datetimepicker').datetimepicker();
@@ -35,7 +33,7 @@ $(document).ready(function() {
                         desc: $('#description').val(),
                         title: $('#title').val(),
                         time: $('#datetimepicker').val(),
-                        org: 'Cambridge Women\'s Center',
+                        org: 'Prison Books',
                         tele: '555-555-5559',
                         address: $('#location').val(),
                         skills: $('#skills').val()
@@ -71,7 +69,7 @@ $(document).ready(function() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};*/
 
-    $('#info-tab-content').load('info.html', function() {
+    $('#info-tab-content').load('pb-info.html', function() {
     	/*var map = new google.maps.Map($('#map-canvas')[0], mapOptions);
 	    geocoder.geocode({'address': address}, function(results, status) {
 	    	if (status == google.maps.GeocoderStatus.OK) {

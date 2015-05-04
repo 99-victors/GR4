@@ -8,7 +8,8 @@ var data = {
 	        address: '18 Bartlett Sq. Jamaica Plain, MA 02130',
 	        skills: 'None',
             type:  'home',
-            num: '0'
+            num: '0',
+	        orgLink: 'Organization/bnb.html'
 	    }), new Event({
 	        desc: 'Pack up books in boxes to be shipped to prisons.',
 	        title: 'Book Packing',
@@ -18,8 +19,8 @@ var data = {
 	        address: '1306 Hancock St. Quincy, MA 02169',
 	        skills: 'None',
             type:  'home',
-            num: '1'
-
+            num: '1',
+			orgLink: 'Organization/pb.html'
 	    }), new Event({
 	        desc: 'Help act as waiters for our guests and serve food.',
 	        title: 'Serving Food',
@@ -29,9 +30,10 @@ var data = {
 	        address: '889 Harisson Ave. Boston, MA 02118',
 	        skills: 'None',
             type:  'home',
-            num: '2'
+            num: '2',
+	        orgLink: 'Organization/rp.html'
 
-	    })],
+    })],
     homeless: [new Event({
 	        desc: 'Help cook for our soup kitchen.',
 	        title: 'Soup Kitchen Cooking',
@@ -41,8 +43,8 @@ var data = {
 	        address: '537 Massachusetts Avenue, Cambridge, MA, 02319',
 	        skills: 'Cooking',
             type:  'homeless',
-            num: '0'
-
+            num: '0',
+	        orgLink: 'Organization/chc.html'
 	    })],
     women: [new Event({
             desc: 'Come find calm and discuss and connect with others over food.',
@@ -53,8 +55,8 @@ var data = {
             address: '539 Massachusetts Avenue, Cambridge, MA, 02319',
             skills: 'Listening',
             type:  'women',
-            num: '0'
-
+            num: '0',
+            orgLink: 'Organization/cwc.html'
         }), new Event({
             desc: 'Help cook for our soup kitchen.',
             title: 'Daily Kitchen Cooking',
@@ -64,7 +66,8 @@ var data = {
             address: '539 Massachusetts Avenue, Cambridge, MA, 02319',
             skills: 'Cooking',
             type:  'women',
-            num: '1'
-
+            num: '1',
+            skills: 'Cooking', 
+            orgLink: 'Organization/cwc.html'
         })]
 };

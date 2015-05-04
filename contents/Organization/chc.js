@@ -23,8 +23,8 @@ $(document).ready(function() {
         if (isVol) {
           $('#addbutton').hide()
         }
-        for (var i = 0; i < data.homepage.length; i++) {
-            $('#events-tab-content').append(data.women[i].toOrgHTML());
+        for (var i = 0; i < data.homeless.length; i++) {
+            $('#events-tab-content').append(data.homeless[i].toOrgHTML());
         }
 
     	$('#add-form').load('add.html', function() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
                         desc: $('#description').val(),
                         title: $('#title').val(),
                         time: $('#datetimepicker').val(),
-                        org: 'Cambridge Women\'s Center',
+                        org: 'Cambridge Homeless Center',
                         tele: '555-555-5559',
                         address: $('#location').val(),
                         skills: $('#skills').val()
@@ -71,7 +71,7 @@ $(document).ready(function() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};*/
 
-    $('#info-tab-content').load('info.html', function() {
+    $('#info-tab-content').load('chc-info.html', function() {
     	/*var map = new google.maps.Map($('#map-canvas')[0], mapOptions);
 	    geocoder.geocode({'address': address}, function(results, status) {
 	    	if (status == google.maps.GeocoderStatus.OK) {
