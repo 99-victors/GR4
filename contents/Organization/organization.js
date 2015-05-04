@@ -6,7 +6,7 @@ $(document).ready(function() {
       	$('#navbar-logout').attr('href', '../homepage.html');
     });
 
-  
+/*  
     function getCookie(cname) {
         var name = cname + "=";
         var ca = document.cookie.split(';');
@@ -67,7 +67,7 @@ $(document).ready(function() {
 		 	//google.maps.event.trigger(map, 'resize');
 		});
     });
-
+*
 
 
 
