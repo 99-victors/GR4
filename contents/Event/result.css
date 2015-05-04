@@ -3,7 +3,33 @@
 }
 
 #roomLeft{
-    text-align: right;
+}
+
+#map{
+  margin-left: 50px; 
+}
+
+#banner{
+    font-weight: bold;
+  
+}
+#textColumn{
+  width: 300px;
+}
+
+#desc{
+ margin-top: -75px;
+ font-style: italic;
+  font-size: 20px;
+}
+
+#others{
+  width: 50px; 
+}
+
+.org{
+    margin-top:-10px;
+    margin-left: 20px;
 }
 
 .event{

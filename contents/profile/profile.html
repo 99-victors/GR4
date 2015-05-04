@@ -20,7 +20,7 @@
     </div>
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#eventsTab">Registered Events</a></li>
-        <li><a data-toggle="tab" href="#infoTab">Personal Information <button id="edit" data-toggle="modal" data-target="#myModal"><span  class="glyphicon glyphicon-pencil"></button></span></a></li>
+        <li><a data-toggle="tab" href="#infoTab">Personal Information <button id="edit" data-toggle="modal" data-target="#edit-form"><span  class="glyphicon glyphicon-pencil"></button></span></a></li>
       </ul>
       <div class="tab-content">
         <div id="eventsTab" class="tab-pane fade in active">
@@ -70,7 +70,7 @@
       </div>
     </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="edit-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -86,31 +86,31 @@
               </div>
               <div class="form-group">
                               <div class="form-group">
-            <label for="skills">Skills needed:</label>
+            <label for="skills">Skills:</label>
                 <br/>
-                <input type="skills" class="form-control" id="location"></input>
+                <input type="skills" class="form-control" id="skills"></input>
               </div>
 
                 <label for="location">Location:</label>
                 <br/>
-                <input type="location" class="form-control" id="location"></input>
+                <input type="location" class="form-control" id="locations"></input>
               </div>
               <div class="form-group">
                 <label for="tel">Email:</label>
                 <br/>
-                <input type="tel" class="form-control" id="people"></input>
+                <input type="tel" class="form-control" id="hone"></input>
               </div>          
               <div class="form-group">
                 <label for="tel">Tel:</label>
                 <br/>
-                <input type="tel" class="form-control" id="people"></input>
+                <input type="tel" class="form-control" id="mail"></input>
               </div>
             </form>
           </div>
           <div class="modal-footer">
             <br/>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button id="edit-button" type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>

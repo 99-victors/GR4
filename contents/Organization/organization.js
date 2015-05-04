@@ -45,6 +45,20 @@ $(document).ready(function() {
 	    		}
 	    	});
 	    });
+      
+      $('#edit-form').load('edit.html', function(){
+        $('#edit-button').click(function(e){
+ 		if (confirm('Are you sure you want to update this information?')) {          
+          $('#mission').html($('#miss').val())
+          $('#info').html($('#mail').val())
+          $('#tele').html($('#phone').val())
+          $('#page').html($('#site').val()) 
+      	  $('#page').attr('href', $('#site').val());
+	      $('#edit-form').modal('hide');
+          
+        }
+        });
+      });
     });
 
     /*var geocoder = new google.maps.Geocoder();

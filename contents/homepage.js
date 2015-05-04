@@ -7,12 +7,12 @@ $(document).ready(function () {
 
   
   
-  $('#volunteerLink').click(function(){
+  $('#volunteerLink').click(function(e){
     document.cookie="usertype=Volunteer ;domain=.contents;path=/";
     console.log("clicked")
   });
   
-  $('#orglink').click(function(){
+  $('#orglink').click(function(e){
     document.cookie="usertype=Organization ;domain=.contents ;path=/";
   }); 
 });

@@ -15,31 +15,56 @@
 <body>
     <nav id="navbar"></nav>
     <div class="container">
-      <div class="jumbotron">
-        <h2 id="banner">Soup Kitchen Cooking</h2>
+        <div><h2 id="banner">Soup Kitchen Cooking</h2> <h3 class="org">- Boston Area Homeless Shelter</h3></div>
+
+      <table>
+        <td id="textColumn">      
+          <div class="row entry">              
+            <div class="col-md-1"></div>
+
+      <div id="desc" class="col-md-10">Help provide food for homeless people.</div>
+      </div>
+      
+      <div class="row entry">
+              <div class="col-md-1"></div>
+        <div class="col-md-10" id="eventInfo">Show up Sunday, 10 AM</div>
+      </div>
+      <div class="row entry">
+              <div class="col-md-1"></div>
+        <div class="col-md-10" id="eventInfo"><div id="roomLeft">Room left for: 20</div></div></div>
       </div>
 
+      <div class="row entry">
+              <div class="col-md-1"></div>
+        <div class="col-md-10" id="eventInfo">      <input type="radio" name="going" value="self"/> I'm going by myself
+      </div>      </div>
 
-      <div id="eventInfo"><div>Show up Sunday, 10 AM</div><div id="roomLeft">Room left for: 20</div></div>
+      <div class="row entry">
+              <div class="col-md-1"></div>
+        <div class="col-md-10" id="eventInfo">      <input type="radio" name="going" value="others"/> I'm bringing <input id="others" type="text" name="numOthers"/> other people
+</div></div>
 
+      
+      <div class="row entry">
+              <div class="col-md-1"></div>
+        <div class="col-md-10" id="eventInfo">      <button id="submitButton" onclick="return confirm('Are you sure?')">Submit Registration</button> <button style="display:none" id="cancelButton" onclick="return confirm('Are you sure?')">Cancel Registration</button>
+</div></div>
+
+      
+      </td>
+  
+      <td>
       <iframe
+        id = "map"
         width="600"
         height="450"
         frameborder="0" style="border:0"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8E_jgfwL9j4UuS4-4RnsAJVzojP-1w-Q
         &q=46+Pleasant+Street+Cambridge+MA">
       </iframe>
+      </td>
 
-      <div id="location">Boston Area Homeless Shelter</div>
-      <br/>
-      <input type="radio" name="going" value="self"/> I'm going by myself<br/>
-      <input type="radio" name="going" value="others"/> I'm bringing <input type="text" name="numOthers"/> other people<br/>
-      <br/>
-
-      I'm planning on showing up at <input type="text" name="whenShowing"/>. 
-      <br/>
-      <button id="submitButton">Submit Registration</button>
-
+      </table>
     </div>
     <script type="text/javascript" src="../jquery/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="../jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
