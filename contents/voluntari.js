@@ -9,10 +9,22 @@ $(document).ready(function () {
         $('#navbar-home').attr('href', './voluntari.html');
     }); 
 
-    $('#content').prop('data', 'Search/voluntariSearch.html?first=True');
 
     var performSearch = function () {
-        $('#content').prop('data', 'Search/voluntariSearch.html?query=' + $('#searchBox').val());
+        //$('#content').prop('data', 'Search/voluntariSearch.html?query=' + $('#searchBox').val());
+      var searchQuery =  $('#searchBox').val();    
+      console.log("search");
+      if(searchQuery.indexOf("home") > -1 || searchQuery.indexOf("less") > -1 || searchQuery.indexOf("center") > -1){
+          $('#results').load('partials/homelessSearch.html');
+      }
+
+      if(searchQuery.indexOf("women") > -1){
+          $('#results').load('partials/womenSearch.html');
+              console.log("ladies");
+
+      }
+
+  
     };
 
     $('#searchButton').click(performSearch);
@@ -23,6 +35,8 @@ $(document).ready(function () {
     	}
     });
 
+  
+  
     $('#advancedSearch').click(function () {
     	
     });

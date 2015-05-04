@@ -1,6 +1,7 @@
 // This allows the Javascript code inside this block to only run when the page
 // has finished loading in the browser.
 $(function() {
+var women = '../Organization/organization.html';
 
 //This script extracts parameters from the URL
 //from jquery-howto.blogspot.com
@@ -27,6 +28,8 @@ $(function() {
 *
 ***********************************************************************************************************************************/        
     
+  
+
     
     
 /**********************************************************************************************************************************
