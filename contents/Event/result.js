@@ -20,7 +20,7 @@ $(document).ready(function() {
     	 $('#navbar-home').attr('href', '../voluntari.html');          
       	 $('#navbar-prof').attr('href', '../profile/profile.html');
         } else{
-         $('#navbar-prof').attr('href', 'organization.html');
+         $('#navbar-prof').attr('href', '../Organization/organization.html');
         }
       	$('#navbar-logout').attr('href', '../homepage.html');
     });
@@ -102,9 +102,13 @@ $(document).ready(function() {
     $('#cancelButton').hide();
   }
   
-  if(isVol){
+  if(!isVol){
       $('#submitButton').hide(); 
       $('#cancelButton').hide();
+      $('#ques1').hide(); 
+      $('#ques2').hide();
+      $('#que1').hide(); 
+      $('#que2').hide();    
   }
   
 });
