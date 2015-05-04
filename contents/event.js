@@ -8,7 +8,7 @@ var Event = function(data) {
 		output += '  <div class="col-md-3"></div>';
 		output += '  <div class="col-md-8"><a class="eventName" href="https://www.google.com">' + data.title + '</a></div>';
 		output += '</div>';
-		output += '<div class="row event">';
+		output += '<div class="row entry">';
 		output += '  <div class="col-md-3"></div>';
 		output += '  <div class="col-md-5">' + data.desc + '</div>';
 		output += '</div>';
