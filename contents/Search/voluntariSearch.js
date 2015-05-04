@@ -4,7 +4,6 @@ $(function() {
 
 //This script extracts parameters from the URL
 //from jquery-howto.blogspot.com
-
     $.extend({
         getUrlVars : function() {
             var vars = [], hash;
@@ -73,46 +72,7 @@ $(function() {
     }
     
     if(searchQuery.indexOf("women") > -1){
-        $('#results').html(
-           " <div class=\"row event\">" +
-        "<div class=\"col-md-3\"></div>" +
-        "<div class=\"col-md-8\"><a class=\"eventName\" href=\"https://www.google.com\">Meditation and Discussion</a></div>" +
-    "</div>" +
-    "<div class=\"row entry\">" +
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\">Mon: 2pm - 7pm</div>"+
-        "<div class=\"col-md-2\"><button>See Map</button></div>"+
-    "</div>"+
-    "<div class=\"row entry\">"+
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization/organization.html\">Cambridge Women's Center</a></div>"+
-        "<div class=\"col-md-2\">617-555-5555</div>"+
-    "</div>"+
-    "<div class=\"row entry\">"+
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-4\">539 Massachusetts Avenue, Cambridge, MA, 02319</div>"+
-    "</div>"+
-            
-    " <div class=\"row event\">" +
-        "<div class=\"col-md-3\"></div>" +
-        "<div class=\"col-md-8\"><a class=\"eventName\" href=\"https://www.google.com\">Soup Kitchen Cooking</a></div>" +
-    "</div>" +
-    "<div class=\"row entry\">" +
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\">Tues: 10am - 12pm</div>"+
-        "<div class=\"col-md-2\"><button>See Map</button></div>"+
-    "</div>"+
-    "<div class=\"row entry\">"+
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-2\"><a class=\"organization\" href=\"../Organization/organization.html\">Cambridge Women's Center</a></div>"+
-        "<div class=\"col-md-2\">617-555-5555</div>"+
-    "</div>"+
-    "<div class=\"row entry\">"+
-        "<div class=\"col-md-4\"></div>"+
-        "<div class=\"col-md-4\">539 Massachusetts Avenue, Cambridge, MA, 02319</div>"+
-    "</div>"
-            
-        );
+        $('#results').load('../partials/womenSearch.html');
     }
     
 /**********************************************************************************************************************************
@@ -120,8 +80,5 @@ $(function() {
 *                        Student Defined Listeners
 *
 ***********************************************************************************************************************************/        
-    
-    
-    
     
 });
