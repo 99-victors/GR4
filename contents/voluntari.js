@@ -7,6 +7,7 @@ $(document).ready(function () {
         // set the loaded navbar's title's link
         $('#navbar-brand').attr('href', './voluntari.html');
         $('#navbar-home').attr('href', './voluntari.html');
+        $('#navbar-logout').attr('href', './homepage.html');
     }); 
 
 
