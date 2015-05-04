@@ -1,11 +1,29 @@
 $(document).ready(function() {
-	$('#navbar').load('../partials/navbar.html', function() {
-		$('#navbar-brand').attr('href', '../voluntari.html');
-		$('#navbar-home').attr('href', '../voluntari.html');
-      	$('#navbar-prof').attr('href', '../profile/profile.html');      
-      	$('#navbar-logout').attr('href', '../homepage.html');
-	});
   
+        function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    } 
+      var isVol = getCookie("usertype") == "Volunteer";
+
+  
+    $('#navbar').load('../partials/navbar.html', function() {
+
+        if(isVol){
+     	 $('#navbar-brand').attr('href', '../voluntari.html');
+    	 $('#navbar-home').attr('href', '../voluntari.html');          
+      	 $('#navbar-prof').attr('href', '../profile/profile.html');
+        } else{
+         $('#navbar-prof').attr('href', 'organization.html');
+        }
+      	$('#navbar-logout').attr('href', '../homepage.html');
+    });
   
 //This script extracts parameters from the URL
 //from jquery-howto.blogspot.com
@@ -27,17 +45,6 @@ $(document).ready(function() {
         }
     });
   
-  
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0; i<ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1);
-            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
-        }
-        return "";
-    }   
     
    var type;
    var scope;
@@ -93,6 +100,11 @@ $(document).ready(function() {
   } else{
     $('#submitButton').show(); 
     $('#cancelButton').hide();
+  }
+  
+  if(isVol){
+      $('#submitButton').hide(); 
+      $('#cancelButton').hide();
   }
   
 });

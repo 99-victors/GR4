@@ -1,12 +1,5 @@
 $(document).ready(function() {
-    $('#navbar').load('../partials/navbar.html', function() {
-    	$('#navbar-brand').attr('href', '../voluntari.html');
-    	$('#navbar-home').attr('href', '../voluntari.html');
-      	$('#navbar-prof').attr('href', '../profile/profile.html');
-      	$('#navbar-logout').attr('href', '../homepage.html');
-    });
-
-    function getCookie(cname) {
+      function getCookie(cname) {
         var name = cname + "=";
         var ca = document.cookie.split(';');
         for(var i=0; i<ca.length; i++) {
@@ -16,8 +9,22 @@ $(document).ready(function() {
         }
         return "";
     } 
+      var isVol = getCookie("usertype") == "Volunteer";
+
   
-    var isVol = getCookie("usertype") == "Volunteer";
+    $('#navbar').load('../partials/navbar.html', function() {
+
+        if(isVol){
+     	 $('#navbar-brand').attr('href', '../voluntari.html');
+    	 $('#navbar-home').attr('href', '../voluntari.html');          
+      	 $('#navbar-prof').attr('href', '../profile/profile.html');
+        } else{
+         $('#navbar-prof').attr('href', 'organization.html');
+        }
+      	$('#navbar-logout').attr('href', '../homepage.html');
+    });
+
+
   
     $('#events-tab-content').load('events.html', function() {
         if (isVol) {
