@@ -42,3 +42,10 @@ body{
 .form-control{
     width:200px;
 }
+
+#map-canvas{
+    width:600;
+    height:450;
+    frameborder:"0";
+    style:"border:0";
+}
