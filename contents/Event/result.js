@@ -4,6 +4,6 @@ $(document).ready(function() {
 	});
 
 	$('#submitButton').click(function(){
-    console.log('test');
-  });
+    	console.log('test');
+    });
 });
