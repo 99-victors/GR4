@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Results Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap core CSS -->
+  <link type="text/css" href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- JQuery CSS -->
+  <link type="text/css" href="../jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+  <!-- Custom styles -->
+  <link type="text/css" href="profile.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav id="navbar"></nav>
+    <div class="container">
+          <div class="container">
+        <h2 id="banner">Victor's Profile Page</h2>
+    </div>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#eventsTab">Registered Events</a></li>
+        <li><a data-toggle="tab" href="#infoTab">Personal Information <button id="edit" data-toggle="modal" data-target="#myModal"><span  class="glyphicon glyphicon-pencil"></button></span></a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="eventsTab" class="tab-pane fade in active">
+          <div class="row entry">
+            <div class="col-md-3"></div></div>
+          <div class="row entry">
+
+          </div>
+          <div class="row event">
+            <div class="col-md-8"><a class="eventName" href="https://www.google.com">Meditation and Discussion</a></div>
+          </div>
+          <div class="row entry">
+            <div class="col-md-2 time"><b>Mon: 2pm - 7pm</b></div>
+          </div>
+          <div class="row entry">
+            <div class="col-md-5">Come find calm and discuss and connect with others over food.</div>
+          </div>
+            <div class="row entry">
+            <div class="col-md-5"><em>Skills Needed: Listening</em></div>
+          </div>
+          <div class="row event">
+            <div class="col-md-8"><a class="eventName" href="../Event/result.html">Soup Kitchen Cooking</a></div>
+          </div>
+          <div class="row entry">
+            <div class="col-md-2 time"><b>Tues: 10am - 12pm</b></div>   
+          </div>
+          <div class="row entry">
+            <div class="col-md-5">Help provide food for homeless women</div>
+          </div>
+          <div class="row entry">
+            <div class="col-md-5"><em>Skills Needed: Cooking</em></div>
+          </div>            
+        </div>
+        <div id="infoTab" class="tab-pane fade">
+        <div class="row col-md-8">
+          <table>
+            <tr><p><p class="descriptor">Mission Statment:</p> To provide women with the resources and support they need to emerge from conditions of domestic violence, sexual abuse, poverty, discrimination, social isolation, and degradation. To challenge and change the attitudes, actions, and institutions that subjugate women.</p></tr>
+              <tr><p><p class="descriptor">Location:</p> 46 Plesant St. Cambridge, MA 02319</p></tr>
+              <tr><img src="map.png"/></tr>
+              <tr><p><p class="descriptor">Email:</p> info@cambridgewomenscenter.org</p></tr>
+              <tr><p><p class="descriptor">Tel:</p> 617-555-5555</p></tr>
+              <tr><p><p class="descriptor">Website:</p> <a  href="www.cambridgewomenscenter.org/aboutus.html">www.cambridgewomenscenter.org/aboutus.html</a></p></tr>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Add Event</h4>
+          </div>
+          <div class="modal-body">
+             <form id="eventForm" role="form">
+              <div class="form-group">
+                <label for="title">Title:</label>
+                <br/>
+                <input type="title" class="form-control" id="title">
+              </div>
+              <div class="form-group">
+                    <label for="Time">Time:</label>
+                <div class="input-group date">
+                    <input type="text" class="form-control" id="datepicker"></input>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="location">Location:</label>
+                <br/>
+                <input type="location" class="form-control" id="location"></input>
+              </div>
+              <div class="form-group">
+                <label for="desc">Description:</label>
+                <br/>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="skills">Skills needed:</label>
+                <br/>
+                <input type="location" class="form-control" id="location"></input>
+              </div>
+              <div class="form-group">
+                <label for="people">Number of people needed:</label>
+                <br/>
+                <input type="people" class="form-control" id="people"></input>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <br/>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="../jquery/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="profile.js"></script>
+
+  </body>
+</html>

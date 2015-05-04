@@ -1,0 +1,44 @@
+.descriptor{
+    font-weight: bold;
+}
+
+.event{
+    margin-top:20px;
+}
+
+.entry{
+    margin-top:5px;
+}
+
+.eventName{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.time{
+    font-size:18px;
+}
+
+.datepicker {
+    z-index: 1151 !important;
+}
+
+.navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+body{
+    height: 100%;
+    /* background-color: #00C0C0; */
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.form-control{
+    width:200px;
+}
