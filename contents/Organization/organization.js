@@ -20,7 +20,7 @@ $(document).ready(function() {
   
     var isVol = getCookie("usertype") == "Volunteer";
   
-    $('#events-tab').load('events.html', function() {
+    $('#events-tab-content').load('events.html', function() {
         
         if (isVol) {
           $('#addbutton').hide()
