@@ -30,7 +30,7 @@ $(document).ready(function() {
         if (isVol) {
           $('#addbutton').hide()
         }
-        for (var i = 0; i < data.homepage.length; i++) {
+        for (var i = 0; i < data.women.length; i++) {
             $('#events-tab-content').append(data.women[i].toOrgHTML());
         }
 

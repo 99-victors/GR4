@@ -35,6 +35,7 @@ var Event = function(data) {
 
 	this.toOrgHTML = function() {
 		var output = '';
+		
 		output += '<div class="row event">';
 		output += '  <div class="col-md-8"><a class="eventName" href="../Event/result.html?eventtype='+data.type+'&eventnum='+data.num+' ">' + data.title + '</a></div>';
 		output += '</div>';
