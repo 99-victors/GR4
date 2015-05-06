@@ -15,12 +15,11 @@ var Event = function(data) {
 		output += '<div class="row entry">';
 		output += '  <div class="col-md-4"></div>';
 		output += '  <div class="col-md-3">' + data.time + '</div>';
-		output += '  <div class="col-md-2"><button style="display:hidden">';
+		output += '  <div class="col-md-2"><span class="glyphicon glyphicon-earphone"></span>' + data.tele + '</div>';
 		output += '</div>';
 		output += '<div class="row entry">';
 		output += '  <div class="col-md-4"></div>';
-		output += '  <div class="col-md-3"><a class="organization" href="' + data.orgLink + '">' + data.org + '</a></div>';
-		output += '  <div class="col-md-2"><span class="glyphicon glyphicon-earphone"></span>' + data.tele + '</div>';
+		output += '  <div class="col-md-4"><a class="organization" href="' + data.orgLink + '">' + data.org + '</a></div>';
 		output += '</div>';
 		output += '<div class="row entry">';
 		output += '  <div class="col-md-4"></div>';
