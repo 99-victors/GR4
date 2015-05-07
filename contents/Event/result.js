@@ -109,6 +109,7 @@ $(document).ready(function() {
       $('#ques2').hide();
       $('#que1').hide(); 
       $('#que2').hide();    
+      $('#textColumn').append("Victor Rodriguez, Victoria Rosenthal, Vicky Schwartz, Vi Lin, Vick Corning");
   }
   
 });
