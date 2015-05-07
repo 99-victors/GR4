@@ -23,18 +23,22 @@ $(document).ready(function() {
     for (var i = 0; i < data.homepage.length; i++) {
         if(getCookie("registered"+data.homepage[i].data.type+data.homepage[i].data.num) == "true"){
           $('#eventsTab').append(data.homepage[i].toOrgHTML());    
+          console.log("registered for "+ data.homepage[i].data.title);                    
         }
     }
   
     for (var i = 0; i < data.homeless.length; i++) {
         if(getCookie("registered"+data.homeless[i].data.type+data.homeless[i].data.num) == "true"){
           $('#eventsTab').append(data.homeless[i].toOrgHTML());    
+          console.log("registered for "+ data.homeless[i].data.title);          
         }
     }
   
       for (var i = 0; i < data.women.length; i++) {
         if(getCookie("registered"+data.women[i].data.type+data.women[i].data.num) == "true"){
           $('#eventsTab').append(data.women[i].toOrgHTML());    
+          console.log("registered for "+ data.women[i].data.title);
+          
         }
     }
   

@@ -9,6 +9,10 @@
   margin-left: 50px; 
 }
 
+#people{
+ display : inline 
+}
+
 #banner{
     font-weight: bold;
   

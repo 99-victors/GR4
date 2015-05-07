@@ -46,8 +46,7 @@ $(document).ready(function() {
     });
   
     
-   var type;
-   var scope;
+   var type,i,name,numReg;
    if ($.getUrlVar('eventtype') != '' && $.getUrlVar('eventnum') != '') {
       i = $.getUrlVar('eventnum')  
       type = $.getUrlVar('eventtype')
@@ -61,7 +60,7 @@ $(document).ready(function() {
       } else{
           event = data.women[i]          
       }
-     
+      name = event.data.title;
       console.log("got event~!")
       console.log(event.data.org)
       $('#banner').html(event.data.title)
@@ -72,15 +71,41 @@ $(document).ready(function() {
       
    }
   
+  if(getCookie("registered"+type+i+"num") != ""){
+    $('#people').html(parseInt(getCookie("registered"+type+i+"num")));
+  } else{
+    $('#people').html(20);
+    document.cookie = "registered"+type+i+"num=20"
+  }
   
   $('#submitButton').click(function(){
     console.log('Hi');
-    var choice = confirm('Confirm registration?');
-    if(choice){
-      alert('Registration successful.');
-      document.cookie="registered"+type+i+"=true"
-      $('#submitButton').hide(); 
-      $('#cancelButton').show();       
+    if($('#ques1').is(':checked') || $('#ques2').is(':checked')){
+      var numPeople;
+      if($('#ques1').is(':checked')){
+        numPeople = 1;        
+      }else{
+        numPeople = parseInt($('#others').val())
+        if(numPeople >parseInt(getCookie("registered"+type+i+"num"))){
+            alert("Too many people to register!");
+            return;
+        }
+      }
+      
+      
+      
+      
+      var choice = confirm('Confirm registration?');
+      if(choice){
+        document.cookie="registered"+type+i+"=true"
+        $('#submitButton').hide(); 
+        $('#cancelButton').show(); 
+        $('#people').html(20 - numPeople);
+        document.cookie = "registered"+type+i+"num=" + toString(20 - numPeople);
+        
+      }
+    }else{
+      alert("Please indicate how many people are coming.")
     }
   });
   
@@ -88,19 +113,25 @@ $(document).ready(function() {
     console.log('Hi');
     var choice = confirm('Cancel registration?');
     if(choice){
-      alert('Cancellation successful.');
       document.cookie="registered"+type+i+"=false"
       $('#submitButton').show(); 
       $('#cancelButton').hide();       
+      $('#people').html(20);      
+      document.cookie = "registered"+type+i+"num=20"      
     }
   });
+  
+  
+  
   
   if(getCookie("registered"+type+i) == "true"){
     $('#submitButton').hide(); 
     $('#cancelButton').show(); 
+    console.log("registered for "+ name);
   } else{
     $('#submitButton').show(); 
     $('#cancelButton').hide();
+    console.log("NOT registered for "+ name);    
   }
   
   if(!isVol){

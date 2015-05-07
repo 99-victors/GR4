@@ -22,6 +22,7 @@ $(document).ready(function() {
     $('#events-tab-content').load('events.html', function() {
         if (isVol) {
           $('#addbutton').hide();
+          $('#edit').hide();          
         }
 
         for (var i = 0; i < data.women.length; i++) {

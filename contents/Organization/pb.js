@@ -22,6 +22,7 @@ $(document).ready(function() {
     $('#events-tab-content').load('events.html', function() {
         if (isVol) {
           $('#addbutton').hide()
+          $('#edit').hide();          
         }
         $('#events-tab-content').append(data.homepage[1].toOrgHTML());
 
