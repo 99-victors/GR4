@@ -9,7 +9,10 @@ $(document).ready(function() {
         }
         return "";
     } 
-      var isVol = getCookie("usertype") == "Volunteer";
+    var isVol = getCookie("usertype") == "Volunteer";
+
+    console.log(document.cookie);
+    console.log("User: " + getCookie("usertype"));
 
   
     $('#navbar').load('../partials/navbar.html', function() {
@@ -28,9 +31,11 @@ $(document).ready(function() {
   
     $('#events-tab-content').load('events.html', function() {
         if (isVol) {
-          $('#addbutton').hide()
+          $('#addbutton').hide();
+          $('#edit').hide();
+          console.log("hide");
         }
-        for (var i = 0; i < data.homepage.length; i++) {
+        for (var i = 0; i < data.women.length; i++) {
             $('#events-tab-content').append(data.women[i].toOrgHTML());
         }
 

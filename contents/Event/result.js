@@ -65,7 +65,8 @@ $(document).ready(function() {
       console.log("got event~!")
       console.log(event.data.org)
       $('#banner').html(event.data.title)
-      $('#org').html("- "+ event.data.org)
+      $('#orgLink').html("- "+ event.data.org)
+      $('#orgLink').attr("href","../" + event.data.orgLink)      
       $('#desc').html(event.data.desc)
       $('#time').html(event.data.time)
       

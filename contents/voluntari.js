@@ -9,8 +9,8 @@ $(document).ready(function () {
         $('#navbar-home').attr('href', './voluntari.html');
         $('#navbar-logout').attr('href', './homepage.html');
     }); 
-    document.cookie="usertype=Volunteer";
-    console.log(data);
+
+  console.log(document.cookie);
     for (var i = 0; i < data.homepage.length; i++) {
         console.log(data.homepage[i])
         $('#results').append(data.homepage[i].toHTML());    
