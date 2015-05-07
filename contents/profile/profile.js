@@ -20,6 +20,8 @@ $(document).ready(function() {
         return "";
     }     
   
+    console.log(document.cookie);
+  
     for (var i = 0; i < data.homepage.length; i++) {
         if(getCookie("registered"+data.homepage[i].data.type+data.homepage[i].data.num) == "true"){
           $('#eventsTab').append(data.homepage[i].toOrgHTML());    
