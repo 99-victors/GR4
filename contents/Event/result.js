@@ -141,7 +141,7 @@ $(document).ready(function() {
       $('#ques2').hide();
       $('#que1').hide(); 
       $('#que2').hide();    
-      $('#textColumn').append('<div class="row entry"><div class="col-md-1"></div>  <div class="col-md-10" id="eventInfo">      <p id="que1">  Registered: Victor Rodriguez, Victoria Rosenthal, Vicky Schwartz, Vi O. Lin, Vick Torrie</p></div>      </div>');
+      $('#textColumn').append('<div class="row entry"><div class="col-md-1"></div>  <div class="col-md-10" id="eventInfo">      <p id="que1">  <strong>Registered: </strong><br/>Victor Rodriguez<br/>Victoria Rosenthal<br/>Vicky Schwartz<br/>Vi O. Lin<br/>Vick Torrie</p></div>      </div>');
   }
   
 });
