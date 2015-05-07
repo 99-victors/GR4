@@ -17,6 +17,10 @@
   width: 300px;
 }
 
+#orgLink{
+ color: black; 
+}
+
 #desc{
  margin-top: -100px;
  font-style: italic;

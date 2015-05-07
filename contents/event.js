@@ -10,7 +10,7 @@ var Event = function(data) {
 		output += '</div>';
 		output += '<div class="row entry">';
 		output += '  <div class="col-md-3"></div>';
-		output += '  <div class="col-md-5">' + data.desc + '</div>';
+		output += '  <div class="col-md-5"><i>' + data.desc + '</i></div>';
 		output += '</div>';
 		output += '<div class="row entry">';
 		output += '  <div class="col-md-4"></div>';
@@ -46,7 +46,7 @@ var Event = function(data) {
 		output += '  <div class="col-md-5 time">' + data.address + '</div>';
 		output += '</div>';
 		output += '<div class="row entry">';
-		output += '  <div class="col-md-5">' + data.desc + '</div>';
+		output += '  <div class="col-md-5"><i>' + data.desc + '</i></div>';
 		output += '</div>';
 		output += '<div class="row entry">';
 		output += '  <div class="col-md-5"><em>Skills Needed: ' + data.skills + '</em></div>';
