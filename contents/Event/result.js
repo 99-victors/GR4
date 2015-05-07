@@ -64,7 +64,7 @@ $(document).ready(function() {
       console.log("got event~!")
       console.log(event.data.org)
       $('#banner').html(event.data.title)
-      $('#orgLink').html("- "+ event.data.org)
+      $('#orgLink').html("  "+ event.data.org)
       $('#orgLink').attr("href","../" + event.data.orgLink)      
       $('#desc').html(event.data.desc)
       $('#time').html(event.data.time)
@@ -125,9 +125,11 @@ $(document).ready(function() {
   
   
   if(getCookie("registered"+type+i) == "true"){
+    
     $('#submitButton').hide(); 
     $('#cancelButton').show(); 
     console.log("registered for "+ name);
+    console.log(getCookie("registered"+type+i));
   } else{
     $('#submitButton').show(); 
     $('#cancelButton').hide();

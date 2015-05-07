@@ -21,6 +21,8 @@ $(document).ready(function() {
     }     
   
     console.log(document.cookie);
+    console.log("registered for "+ data.homepage[0].data.title);                    
+    console.log(getCookie("registered"+data.homepage[i].data.type+data.homepage[i].data.num))
   
     for (var i = 0; i < data.homepage.length; i++) {
         if(getCookie("registered"+data.homepage[i].data.type+data.homepage[i].data.num) == "true"){
